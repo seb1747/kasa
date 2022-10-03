@@ -5,11 +5,14 @@ import './Banner.css'
 
 export default function Banner() {
   return (
-    <div className='banner_container'>
-        <img src={BannerImg} alt="banniere page d'accueil" />
-        <div className="banner_text">
+    <div className='bannerWrapper'>
+      <figure className="bannerWrapper__fig">
+        <img className='bannerWrapper__fig__img' src={BannerImg} alt="banniere page d'accueil" />
+      
+        <span className="banner_text">
             Chez vous, partout et ailleurs
-        </div>      
+        </span> 
+      </figure>    
     </div>
   )
 }

@@ -2,8 +2,8 @@
 import './App.css';
 //import Data from './data.json'
 import { Routes, Route} from "react-router-dom";
-import Home from './components/Home/Home'
-import Services from './components/Services/Services'
+import Home from './Pages/Home/Home'
+import About from './Pages/About/About'
 import Location from './components/Location/Location'
 
 
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Home/>} >
           <Route path = "/location/:id" element={<Location/>} />
           </Route>
-        <Route path="/services" element={<Services/>} />             
+        <Route path= "/About" element= {<About/>}/>             
         </Routes>
 
     </div>

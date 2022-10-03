@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className="navbar_container">
     <nav className='navbar'>
         <Link to="/" className='navbar_link'>Accueil</Link>
-        <Link to = "/services" className='navbar_link'>À propos</Link>
+        <Link to = "/About" className='navbar_link'>À propos</Link>
     </nav>
     </div>
   )

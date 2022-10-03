@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Profile() {
+export default function ErrorComponents() {
   return (
     <div>
-      <h1>Votre profil</h1>
+      
     </div>
   )
 }
