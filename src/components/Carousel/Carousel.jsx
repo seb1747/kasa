@@ -2,7 +2,7 @@ import React from 'react'
 import Data from '../../data.json'
 import './Carousel.css'
 
-export default function Location() {
+export default function Carousel() {
 
 
 
