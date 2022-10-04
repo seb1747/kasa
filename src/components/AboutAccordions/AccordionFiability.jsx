@@ -1,17 +1,17 @@
 import React, {useState, useRef, useEffect}from 'react'
 import './Accordion.css'
 import Chevron from '../../assets/images/chevron.svg'
-import ChevronUp from '../../assets/images/chevronUp.svg'
+//import ChevronUp from '../../assets/images/chevronUp.svg'
 
 export default function AccordionFiability() {
 
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
-    const [imgState, setImgState]= useState();
+    //const [imgState, setImgState]= useState();
 
-    const toggleImgState = () => {
-      setImgState(!imgState);
-    }
+    /*const toggleImgState = () => {
+    /*  setImgState(toggle ? {Chevron : true , ChevronUp : false}: {Chevron: false, ChevronUp: true});
+    }*/
 
     const toggleState =() =>{
         setToggle(!toggle);
@@ -33,11 +33,11 @@ export default function AccordionFiability() {
         className="accordionVisible">
             <h1 className="accordionTitle">Fiabilité</h1>
             <img 
-            onClick={toggleImgState}
+            //onClick={toggleImgState}
             src= {Chevron}  alt="chevron" />
         </div>
       <div ref={refHeight} 
-      className={toggle? 'accordionToggle animated' : 'accordionToggle'}
+      className={toggle ? 'accordionToggle animated' : 'accordionToggle'}
       style = {{height: toggle ? `${heightEl}`: "0px"}}>
         
         <p 
