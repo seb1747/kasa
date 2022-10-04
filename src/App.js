@@ -4,7 +4,7 @@ import './App.css';
 import { Routes, Route} from "react-router-dom";
 import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
-import Location from './components/Location/Location'
+import LocationPage from './Pages/LocationPage/LocationPage'
 import Error from './Pages/Error/Error';
 
 
@@ -15,9 +15,9 @@ function App() {
     <div className="App">
       
       <Routes>
-        <Route path="/" element={<Home/>} >
-          <Route path = "/location/:id" element={<Location/>} />
-          </Route>
+        <Route path="/" element={<Home/>} />
+          <Route path = "/location" element={<LocationPage/>} />
+          
         <Route path= "/About" element= {<About/>}/>   
         <Route path= "*" element = {<Error/>} />         
         </Routes>
