@@ -1,26 +1,11 @@
 import React from 'react'
-import data from '../../data.json'
-import './Card.css'
-import {Link, Outlet} from 'react-router-dom'
+import '../../style/Card.css'
 
-export default function Card() {
+export default function Card({ cover, title}) {
   return (
-    <div className='card_container' >
-      <Link to= '/location/:id'></Link>
-      {
-        data && data.map(data =>{
-          return (
-            <div className="card_body" key={data.id} >
-              <div className="card_img">
-                <img src={data.cover} alt="" />
-               
-              <span className="card_title">{data.title}</span>
-              </div>
-              <Outlet/>
-            </div>
-          )
-        })
-      }
+    <div className='location__card'>
+      <img src={cover} alt="location" />
+      <h2>{title}</h2>      
     </div>
   )
 }

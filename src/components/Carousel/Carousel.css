@@ -1,0 +1,73 @@
+#carouselWrapper {
+    position: relative;
+}
+
+.carousel__img {
+    width: 100%;
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.carousel__img__number {
+    display: none;
+}
+.fa-chevron-left, .fa-chevron-right {
+    position: absolute;
+    top: 45%;
+    font-size: 24px;
+    color: #FFFFFF;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa-chevron-left{
+    left: 2%;
+}
+
+.fa-chevron-right{
+    right: 2%;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px)
+{
+    .carousel__img__number{
+        display: block;
+        position: absolute;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+        top: 85%;
+        left: 50%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px)
+{
+    .carousel__img{
+        height: 415px;
+        border-radius: 25px;
+    }
+
+    .carousel__img__number{
+        font-size: 18px;
+        top: 88%;
+        left: 49%;
+    }
+
+    .fa-chevron-left, .fa-chevron-right {
+        font-size: 90px;
+        top: 35%;
+    }
+
+    .fa-chevron-left{
+        left: 1%;
+    }
+
+    .fa-chevron-right{
+        right: 1%;
+    }
+}

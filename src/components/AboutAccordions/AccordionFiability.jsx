@@ -7,11 +7,11 @@ export default function AccordionFiability() {
 
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
-    //const [imgState, setImgState]= useState();
-
-    /*const toggleImgState = () => {
-    /*  setImgState(toggle ? {Chevron : true , ChevronUp : false}: {Chevron: false, ChevronUp: true});
-    }*/
+    //const [imgState, setImgState]= useState({Chevron}, {ChevronUp});
+/*
+   /* const toggleImgState = () => {
+   /*   setImgState(toggle ? {Chevron : true , ChevronUp : false}: {Chevron: false, ChevronUp: true});
+   }*/
 
     const toggleState =() =>{
         setToggle(!toggle);
@@ -33,7 +33,7 @@ export default function AccordionFiability() {
         className="accordionVisible">
             <h1 className="accordionTitle">Fiabilité</h1>
             <img 
-            //onClick={toggleImgState}
+            //onClick={toggleImgState()}
             src= {Chevron}  alt="chevron" />
         </div>
       <div ref={refHeight} 
