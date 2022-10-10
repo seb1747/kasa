@@ -29,12 +29,10 @@ export default function AccordionFiability() {
   return (
     <div className='accordion' >
         <div 
-        onClick={toggleState}
+        onClick={toggleState}        
         className="accordionVisible">
             <h1 className="accordionTitle">Fiabilité</h1>
-            <img 
-            //onClick={toggleImgState()}
-            src= {Chevron}  alt="chevron" />
+            <i className='fa-solid fa-chevon-up'></i>
         </div>
       <div ref={refHeight} 
       className={toggle ? 'accordionToggle animated' : 'accordionToggle'}

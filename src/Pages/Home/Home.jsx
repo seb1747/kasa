@@ -9,6 +9,7 @@ import BannerResponsive from '../../assets/images/bannerResp.jpg'
 
 
 export default function Home() {
+  
   return (
     <div>
      
@@ -22,11 +23,12 @@ export default function Home() {
 
         <div id="location">
           {Data.map((card) => (
+           
             <Link className='location__link' key={`${card.id}`} to={`/Location/${card.id}`}>
               <Card key={`${card.id}`} cover = {card.cover} title = {card.title} />
             </Link>
-          ))}
-        </div>
+          ))} 
+          </div>
       </main>
      
     </div>

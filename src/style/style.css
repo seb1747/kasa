@@ -4,10 +4,10 @@
 }
 
 body{
-    margin: 0;
+    margin: 0 60px 0 60px;
 }
 
-/* Mobile */
+
 header, main {
     margin: 20px;
 }
