@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import Data from '../../data.json'
+import './Accordion.css'
 
 export default function Accordion() {
     const {id} = useParams();
@@ -8,9 +9,9 @@ export default function Accordion() {
     
     const {description, equipments} = AccordionData
   return (
-    <div>
+    <div className='location__wrapper'>
       <div id="location__info">
-        <details className="location__info_details">
+        <details className="location__info__details">
             <summary className="location__info__title">
                 Description <i className="fa-solid fa-chevron-down"></i>
             </summary>
@@ -19,7 +20,7 @@ export default function Accordion() {
       </div>
 
       <div id="location__info">
-        <details className="location__info_details">
+        <details className="location__info__details">
             <summary className="location__info__title">
                Équipements <i className="fa-solid fa-chevron-down"></i>
             </summary>

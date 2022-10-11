@@ -5,7 +5,8 @@
 }
 .headerWrapper__fig img{
     width: 75%;
+    margin-left: 60px;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 
 }

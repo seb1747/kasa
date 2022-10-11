@@ -1,11 +1,9 @@
 * {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-}
+}    
 
-body{
-    margin: 0 60px 0 60px;
-}
+
 
 
 header, main {
@@ -19,7 +17,9 @@ header{
 main{
     margin-top: 10px;
 }
-
+footer{
+    margin: 0;
+}
 
 /* Desktop */
 @media screen and (min-width: 1280px)
