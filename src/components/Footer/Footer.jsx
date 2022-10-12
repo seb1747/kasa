@@ -11,7 +11,7 @@ export default function Footer() {
         </figure>
         <div className="footerWrapper__text">
             <img className="footerWrapper__copyright" src={copyright} alt="copyright"  />
-            <p className='footerWrapper__text__p'>2020 Kasa. All rights reserved</p>
+            <p className='footerWrapper__text__p'>2022 Kasa. All rights reserved</p>
         </div>
 
     </footer>

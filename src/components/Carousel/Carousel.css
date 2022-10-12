@@ -1,9 +1,11 @@
 #carouselWrapper {
     position: relative;
+    margin: 0% 4% 2% 4%;
 }
 
 .carousel__img {
     width: 100%;
+    margin: 15px 0 15px 0;
     height: 255px;
     border-radius: 10px;
     object-fit: cover;
@@ -14,11 +16,11 @@
 .fa-chevron-left, .fa-chevron-right {
     position: absolute;
     top: 45%;
-    font-size: 24px;
+    font-size: 22px;
     color: #FFFFFF;
     z-index: 10;
     cursor: pointer;
-    user-select: none;
+    
 }
 
 .fa-chevron-left{
@@ -30,7 +32,7 @@
 }
 
 
-/* Tablet */
+
 @media screen and (min-width: 768px)
 {
     .carousel__img__number{
@@ -44,7 +46,6 @@
     }
 }
 
-/* Desktop */
 @media screen and (min-width: 1280px)
 {
     .carousel__img{

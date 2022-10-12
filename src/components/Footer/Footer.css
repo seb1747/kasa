@@ -8,24 +8,44 @@
 .footerWrapper__fig{
     display: flex;
     justify-content: center;
-    height: 100%;
+}
+.footerWrapper__fig img {
+    width: 25%;
 }
 .footerWrapper__text{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 50px;
+    padding-left: 10px;
     background: black;
 }
 .footerWrapper__text__p{
     color: #fff;
     align-items: center;
+    font-size: 14px;
 }
 
 .footerWrapper__copyright{
     display: flex;
     width: 20px;
     height: 20px;
+    padding-right: 10px;
     align-items: flex-end;
 }
+@media screen and (min-width : 768px){
+    .footerWrapper__text__p{
+        font-size: 18px;
+    }
+    
+}
+@media screen and (min-width : 1200px){
+    .footerWrapper__text__p{
+        font-size: 22px;
+    }
+    .footerWrapper__fig img {
+        width: 15%;
+    }
+}
+
