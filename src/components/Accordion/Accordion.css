@@ -43,6 +43,9 @@ details p, details li{
 details ul {
     list-style: none;
 }
+.location__info__text{
+    margin: 0 20px 0 30px;
+}
 
 
 @media screen and (min-width: 768px) 
