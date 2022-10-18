@@ -29,11 +29,11 @@ const previousPicture = () =>{
 
   return (
     <section id='carouselWrapper'>
-      {/*on créer les bouton de navigation*/}
+      {/*on créé les bouton de navigation*/}
       {pictures.length > 1 && <i className="fa-solid fa-chevron-left" onClick={previousPicture}></i>}
       {pictures.length > 1 && <i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>}
       
-      {/*intégrations des images du carousel */}
+      {/*intégration des images du carousel */}
       {pictures.map ((img, index) =>{
         return (
           <div key ={index}>
