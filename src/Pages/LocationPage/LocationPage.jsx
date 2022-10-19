@@ -20,7 +20,7 @@ export default function LocationPage() {
     <div>       
         <Carousel pictures={pictures}/>
         <Info title={title} location= {location} tags={tags} host={host} rating={rating}/>
-        <Accordion descripition={description} equipments={equipments}/>
+        <Accordion description={description} equipments={equipments}/>
        
     </div>
   ) 
