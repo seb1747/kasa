@@ -1,14 +1,12 @@
 import React, {useState, } from 'react'
-import location from '../../data.json'
-import {useParams} from 'react-router-dom'
+
 import './Carousel.css'
 
 
-export default function Carousel() {
+export default function Carousel({pictures}) {
 
-  const { id } = useParams();
-  const locationPictures = location.find((object) => object.id === id)
-  const { pictures } = locationPictures;
+  
+
 
   const [locPict, setlocPict] = useState(0)
 

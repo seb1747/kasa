@@ -1,13 +1,8 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import Data from '../../data.json'
 import './Accordion.css'
 
-export default function Accordion() {
-    const {id} = useParams();
-    const AccordionData = Data.find((accordion) => accordion.id === id);
+export default function Accordion({description, equipments}) {
     
-    const {description, equipments} = AccordionData
   return (
     <div className='location__wrapper'>
       <div id="location__info">

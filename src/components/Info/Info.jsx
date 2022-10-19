@@ -1,14 +1,10 @@
 import React from 'react'
-import {useParams} from 'react-router-dom'
+
 import './Info.css'
-import Data from '../../data.json'
 
-export default function InfoLocation () {
-    const {id} = useParams();
-    const infoLocation = Data.find ((location)=> location.id === id)
 
-    const { title , location, tags , host, rating} = infoLocation
-
+export default function InfoLocation ({ title , location, tags , host, rating}) {
+  
     const stars = [1,2,3,4,5]
 
   return (
