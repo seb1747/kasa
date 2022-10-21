@@ -10,9 +10,6 @@ export default function LocationPage() {
  
   const infoLocation = Data.find ((location)=> location.id === id) 
  
-  
-  
- 
   if(infoLocation !==undefined) {
   const { title , location, tags , host, rating, pictures, description, equipments} = infoLocation
    return (
@@ -20,12 +17,10 @@ export default function LocationPage() {
     <div>       
         <Carousel pictures={pictures}/>
         <Info title={title} location= {location} tags={tags} host={host} rating={rating}/>
-        <Accordion description={description} equipments={equipments}/>
-       
+        <Accordion description={description} equipments={equipments}/>       
     </div>
   ) 
    }else{
-    window.location.href ="/404";
-    
+    window.location.href ="/404";    
    }
 }
